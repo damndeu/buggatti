@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bugatti</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Georgia, serif;
+    }
+
+    body {
+      background: black;
+    }
+
+    /* MAIN CONTAINER */
+    .main1 {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      background: url("bugatti.jpg") no-repeat center;
+      background-size: cover;
+    }
+
+    .main1 img {
+      height: 100vh;
+      width: 100vw;
+    }
+
+    /* LOGO */
+    .sub11 {
+      position: absolute;
+      top: 30px;
+      left: 40px;
+      color: red;
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    /* MENU */
+    .sub22 {
+      position: absolute;
+      top: 120px;
+      left: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+
+    }
+
+
+    .sub22 {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      opacity: 0.5;
+    }
+
+
+
+    .sub22 div {
+      position: relative;
+      color: white;
+      font-size: 18px;
+      opacity: 0.8;
+      transition: transform 0.4s ease-in-out, opacity 0.3s;
+      cursor: pointer;
+    }
+
+    .sub22 div:hover {
+      transform: translateX(20px);
+      opacity: 2;
+      color: red;
+    }
+
+
+
+    /* TITLE */
+    .sub33 {
+      position: absolute;
+      bottom: 60px;
+      left: 40px;
+      font-size: 80px;
+      transition: 1s ease-in-out;
+
+
+    }
+
+    .sub33 .bugatti {
+      color: white;
+    }
+
+    .sub33 .veyron {
+      color: red;
+      margin-left: 20px;
+    }
+
+
+    /* EB LOGO */
+    .sub44 {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .main1:hover .sub33 {
+      left: 100vh;
+      transform: translateX(-50%);
+    }
+
+    .main2 {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+
+    .sub1 {
+      width: 50vw;
+      height: 100vh;
+      background-color: black;
+      position: absolute;
+      left: 0vw;
+      top: 6vh;
+      color: aliceblue;
+    }
+
+    .main2 .sub1 h1 {
+      font-size: xx-large;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+
+    }
+
+    .main2 .sub1 h2 {
+      font-size: large;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+
+
+
+    }
+
+    .sub2 {
+      width: 50vw;
+      height: 100vh;
+      position: absolute;
+      right: 0vw;
+      left: 50vw;
+      background-color: brown;
+      top: 6vh;
+
+
+    }
+
+    .sub2 img {
+      width: 50vw;
+      height: 100vh;
+    }
+
+    .main2:hover .sub2 {
+      left: 0vw;
+      transition: all 1s ease-in-out;
+    }
+
+    .sub3 {
+      width: 100;
+      height: 100;
+      position: absolute;
+      right: 100vw;
+
+    }
+
+
+
+
+    .main2:hover .sub3 {
+      left: 0;
+      transition: left 1s ease-in-out;
+      transition-delay: 1s;
+
+    }
+
+    .sub3 {
+      position: absolute;
+      top: 6vh;
+      left: -100vw;
+      /* start hidden */
+      width: 100vw;
+      height: 100vh;
+      transition: left 1s ease-in-out;
+    }
+
+    .sub3 img {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="main1">
+    <img src="https://i.pinimg.com/736x/88/3c/b8/883cb86bd2a55b531a2f732f07a92d87.jpg" alt="homepg">
+
+
+    <div class="sub11">BUGATTI</div>
+
+    <div class="sub22">
+      <div class="Home">Home</div>
+      <div class="Bookings">Bookings</div>
+      <div class="Models">Models</div>
+      <div class="Racing">Racing</div>
+      <div class="About">About</div>
+
+    </div>
+
+    <div class="sub33">
+      <span class="bugatti">Bugatti</span>
+      <span class="veyron">Veyron</span>
+    </div>
+
+    <div class="sub44">EB</div>
+
+
+    <div class="main2">
+      <div class="sub1">
+        <br>
+        <h1>Bugatti Veyron</h1><br>
+        <h2>The Bugatti Veyron is an iconic, ultra-high-performance hypercar known for its groundbreaking engineering,
+          combining immense speed and luxury with an 8.0L quad-turbocharged W16 engine, producing over 1000 horsepower,
+          a 7-speed dual-clutch gearbox, and top speeds exceeding 250 mph, making it a benchmark for modern supercars.
+          It features a carbon fiber monocoque chassis for strength and lightness, sophisticated cooling (10 radiators),
+          and advanced all-wheel-drive, setting new standards for speed, acceleration, and luxury automotive technology.
+        </h2>
+      </div>
+      <div class="sub2">
+
+        <img src="bg.jpg" alt="">
+      </div>
+
+      <div class="sub3">
+        <img src="sub3.jpg" alt="bug">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
