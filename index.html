@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Bugatti</title>
 
   <style>
@@ -203,6 +205,61 @@
       width: 100vw;
       height: 100vh;
     }
+    @media (max-width: 768px) {
+
+  /* kill hover animations (phones don't hover) */
+  .main1:hover .sub33,
+  .main2:hover .sub2,
+  .main2:hover .sub3 {
+    left: 0;
+    transform: none;
+  }
+
+  /* title scaling */
+  .sub33 {
+    font-size: 42px;
+    left: 20px;
+    bottom: 30px;
+  }
+
+  /* menu cleanup */
+  .sub22 {
+    top: 80px;
+    left: 20px;
+    gap: 14px;
+  }
+
+  .sub22 div {
+    font-size: 16px;
+  }
+
+  /* stack layout vertically */
+  .sub1,
+  .sub2,
+  .sub3 {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    top: 0;
+    left: 0;
+  }
+
+  .sub2 img,
+  .sub3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* text spacing */
+  .sub1 h2 {
+    font-size: 15px;
+    padding: 15px;
+  }
+}
+body {
+  overflow-x: hidden;
+}
+
   </style>
 
 </head>
@@ -259,3 +316,4 @@
 
 
 </html>
+
